@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/test/java/yougou/fssj/service/CityDaoTest.java=gbk
+encoding//src/test/java/yougou/fssj/service/CityServiceMock.java=gbk
+encoding//src/test/java/yougou/fssj/service/CityServiceTest.java=gbk
+encoding//src/test/java/yougou/fssj/web/CityActionTest.java=UTF-8

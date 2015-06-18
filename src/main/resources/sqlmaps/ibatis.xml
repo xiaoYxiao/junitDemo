@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//ibatis.apache.org//tDTD SQL Map Config 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+<sqlMapConfig>
+    <settings   cacheModelsEnabled      = "true"
+                enhancementEnabled      = "true"
+                lazyLoadingEnabled      = "true" 
+                errorTracingEnabled     = "true" 
+                useStatementNamespaces  = "true"
+                maxRequests             = "512"   
+                maxSessions             = "128"
+                maxTransactions         = "16"/>
+    
+    <!-- 别名 -->  
+    <typeAlias alias="sql.date"         type="java.sql.Date"/>
+    <typeAlias alias="sql.timestamp"    type="java.sql.Timestamp"/> 
+    <typeAlias alias="sql.map"              type="java.util.Map"/>  
+    <typeAlias alias="sql.list"             type="java.util.List"/>
+    <typeAlias alias="sql.hashmap"          type="java.util.HashMap"/>
+    <typeAlias alias="sql.hashset"          type="java.util.HashSet"/>
+    <typeAlias alias="city" type="yougou.fssj.model.City"/>  
+
+   	<sqlMap resource="sqlmaps/mapper-city.xml"/>
+</sqlMapConfig>
