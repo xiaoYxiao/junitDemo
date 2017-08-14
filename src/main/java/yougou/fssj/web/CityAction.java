@@ -32,6 +32,11 @@ public class CityAction extends ActionSupport {
 		list();
 		return "success";
 	}
+	
+	public String get() throws Exception {
+       City city = cityService.get(cityIds[0]);
+        return "success";
+    }
 
 	public CityService getCityService() {
 		return cityService;
