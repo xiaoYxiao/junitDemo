@@ -33,6 +33,13 @@ public class CityEditAction extends ActionSupport {
 		cityService.save(city);
 		return "list";
 	}
+	
+	public String delete() throws Exception {
+        if (city.getId() != null && city.getId().compareTo("") == 0){
+            cityService.delete(city.getId() );
+        }
+        return "list";
+    }
 
 	/**
 	 * @return the city
