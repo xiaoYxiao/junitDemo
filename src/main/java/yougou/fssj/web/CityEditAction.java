@@ -7,7 +7,7 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class CityEditAction extends ActionSupport {
 	/**
-	 * 
+	 * 3.0 开始开发
 	 */
 	private static final long serialVersionUID = 377548466801007022L;
 	private CityService cityService;
