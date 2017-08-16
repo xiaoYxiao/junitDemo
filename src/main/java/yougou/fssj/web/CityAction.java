@@ -13,7 +13,7 @@ public class CityAction extends ActionSupport {
 	private String[] cityIds;
 
 	/**
-	 * 
+	 * 查询list列表
 	 */
 	private static final long serialVersionUID = 6043973040399939034L;
 
@@ -21,7 +21,9 @@ public class CityAction extends ActionSupport {
 		cityList = cityService.find(0);
 		return "success";
 	}
-
+	/**
+	 * 删除多余数据
+	 */
 	public String delete() throws Exception {
 		if (cityIds != null) {
 			for (String id : cityIds) {
