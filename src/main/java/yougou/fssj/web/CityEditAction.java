@@ -4,11 +4,11 @@ import yougou.fssj.model.City;
 import yougou.fssj.service.CityService;
 
 import com.opensymphony.xwork2.ActionSupport;
-
-public class CityEditAction extends ActionSupport {
-	/**
-	 * 3.0 开始开发 
+/**
+	 * 冲突测试master
 	 */
+public class CityEditAction extends ActionSupport {
+	
 	private static final long serialVersionUID = 377548466801007022L;
 	private CityService cityService;
 	private City city;
